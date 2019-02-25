@@ -1,0 +1,6 @@
+Last login: Sun Feb 24 21:43:51 on ttys000
+Alans-MBP:~ owner$ node
+> console.log("You are in Edwards' world");
+You are in Edwards' world
+undefined
+> Alans-MBP:~ owner$ 
