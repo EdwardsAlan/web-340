@@ -23,3 +23,4 @@ app.use(function(req, res){
 // creates server on port 8080
 http.createServer(app).listen(8080, function(){
   console.log("Application started on port %s", 8080)
+});
