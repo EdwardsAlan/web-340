@@ -1,0 +1,8 @@
+{
+   "name": "curl",
+   "authors": "Alan Edwards",
+   "private": true,
+   "dependencies": {
+      "express": "^4.16.4"
+   }
+}
