@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise 5.2 - If...Else...Render</title>
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#" class="nav-link">About</a>
+            </li>  
+            <li class="nav-item active">
+                <a href="#" class="nav-link">Contact Us</a>
+            </li>
+        <ul>
+           
+    </nav>
+
+        <div class="container">
+            <br /><br />
+            <h2>Composers</h2>
+
+            <% if(names.length >0) {%>
+            <% for(var k = 0; k< names.length; k++) {%>
+                <div class="alert alert-success"><strong><%= name [k] %></strong></div>
+
+            <% } %>
+            <% } %>
+
+        </div>
+        
+</body>
+</html>
+
+</html>
