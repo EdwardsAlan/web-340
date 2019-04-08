@@ -1,3 +1,13 @@
+/*
+============================================
+; Title:  app.js
+; Author: Professor Krasso
+; Date:   28 February 2019
+; Modified by: Alan Edwards
+; Description: Demonstrates EJS layouts.
+;===========================================
+*/
+
 var express = require('express');
 var http = require('http');
 var path = require('path');
