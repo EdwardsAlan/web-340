@@ -1,3 +1,14 @@
+/*
+============================================
+; Title:  app.js
+; Author: Professor Krasso
+; Date:   28 February 2019
+; Modified by: Alan Edwards
+; Description: Demonstrates how to programmatically set
+;              Node.js status codes.
+;===========================================
+*/
+
 var express = require('express');
 var http =  require('http');
 var logger = require('morgan');
