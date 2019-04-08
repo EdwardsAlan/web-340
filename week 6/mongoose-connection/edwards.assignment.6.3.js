@@ -1,9 +1,11 @@
 /*
 ============================================
-; Title:  sullenger-Exercise-6.3.js
-; Author: Alan Edwards
-; Date:   25 March 2019
-; Description:testing connection to mLab DB sandbox
+; Title:  app.js
+; Author: Professor Krasso
+; Date:   28 February 2019
+; Modified by: Alan Edwards
+; Description: Demonstrates how to setup a MongoDB
+;              connection.
 ;===========================================
 */
 
