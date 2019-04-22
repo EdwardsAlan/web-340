@@ -8,54 +8,18 @@
 ;===========================================
 */
 
-var express = require("express");
-var http = require("http");
-var path = require("path");
-var logger = require("morgan");
+var mongoose = require("mongoose");
 
-var Employee = require("./models/employee.js");
+var Schema = mongoose.Schema;
 
-var mongoDB ="mongodb+srv://test-vttij.mongodb.net/test"
-
-mongoose.connect(mongoDB, {
-  useMongoClient: true
+// employeeSchema defined
+var employeeSchema = new Schema({
+  firstName: String,
+  lastName: String
 });
 
-mongoose.Promise=global.Promise;
+// employee model defined
+var Employee = mongoose.model("Employee", employeeSchema);
 
-var db = mongoose.connection;
-
-db.on("error", console.error.bind(console,"connection error: "));
-
-db.once("open", function(){
-  console.log("Application connected to mLab MongoDB instance")
-})
-
-var app = express();
-
-app.use(logger("short"));
-
-var employee = new Employee({
-  fistname: "Jack",
-  lastName: "Daniels"
-})
-
-
-
-
-app.set("views", path.resolve(__dirname, "views/"));
-app.set("view engine", "ejs");
-app.use(logger("short"));
-
-
-//routing
-app.get("/", function(request, response) {
-  response.render("index", {
-    title: "Homepage"
-  });
-});
-
-//Creates app
-http.createServer(app).listen(8080, function() {
-  console.log("Application started on port 8080!");
-});
+// make module accesible with export
+module.exports = Employee;
